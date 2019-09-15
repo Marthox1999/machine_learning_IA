@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<cp &le; 0.5<br/>gini = 0.489<br/>samples = 242<br/>value = [103, 139]<br/>class = not-hired>, fillcolor="#cce6f8"] ;
+1 [label=<ca &le; 0.5<br/>gini = 0.416<br/>samples = 112<br/>value = [79, 33]<br/>class = hired>, fillcolor="#f0b68c"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<exang &le; 0.5<br/>gini = 0.498<br/>samples = 53<br/>value = [25, 28]<br/>class = not-hired>, fillcolor="#eaf4fc"] ;
+1 -> 2 ;
+3 [label=<gini = 0.302<br/>samples = 27<br/>value = [5, 22]<br/>class = not-hired>, fillcolor="#66b3eb"] ;
+2 -> 3 ;
+4 [label=<gini = 0.355<br/>samples = 26<br/>value = [20, 6]<br/>class = hired>, fillcolor="#eda774"] ;
+2 -> 4 ;
+5 [label=<trestbps &le; 109.0<br/>gini = 0.155<br/>samples = 59<br/>value = [54, 5]<br/>class = hired>, fillcolor="#e78d4b"] ;
+1 -> 5 ;
+6 [label=<gini = 0.5<br/>samples = 4<br/>value = [2, 2]<br/>class = hired>, fillcolor="#ffffff"] ;
+5 -> 6 ;
+7 [label=<gini = 0.103<br/>samples = 55<br/>value = [52, 3]<br/>class = hired>, fillcolor="#e68844"] ;
+5 -> 7 ;
+8 [label=<age &le; 56.5<br/>gini = 0.301<br/>samples = 130<br/>value = [24, 106]<br/>class = not-hired>, fillcolor="#66b3eb"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<oldpeak &le; 3.65<br/>gini = 0.116<br/>samples = 81<br/>value = [5, 76]<br/>class = not-hired>, fillcolor="#46a3e7"] ;
+8 -> 9 ;
+10 [label=<gini = 0.095<br/>samples = 80<br/>value = [4, 76]<br/>class = not-hired>, fillcolor="#43a2e6"] ;
+9 -> 10 ;
+11 [label=<gini = 0.0<br/>samples = 1<br/>value = [1, 0]<br/>class = hired>, fillcolor="#e58139"] ;
+9 -> 11 ;
+12 [label=<sex &le; 0.5<br/>gini = 0.475<br/>samples = 49<br/>value = [19, 30]<br/>class = not-hired>, fillcolor="#b6dbf5"] ;
+8 -> 12 ;
+13 [label=<gini = 0.198<br/>samples = 18<br/>value = [2, 16]<br/>class = not-hired>, fillcolor="#52a9e8"] ;
+12 -> 13 ;
+14 [label=<gini = 0.495<br/>samples = 31<br/>value = [17, 14]<br/>class = hired>, fillcolor="#fae9dc"] ;
+12 -> 14 ;
+}
